@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eszköz csatlakoztatás" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="Még nincs csatlakozva" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:backgroundTint="#2A5B5E61"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnLF"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="előre"
+                app:icon="@android:drawable/arrow_up_float"
+                app:iconPadding="0dp" />
+
+            <TextView
+                android:id="@+id/tvStatus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Bal lánctalp"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnLB"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="hátra"
+                app:icon="@android:drawable/arrow_down_float"
+                app:iconPadding="0dp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="25dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnRF"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="előre"
+                app:icon="@android:drawable/arrow_up_float"
+                app:iconPadding="0dp" />
+
+            <TextView
+                android:id="@+id/tvStatus3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Jobb lánctalp"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnRB"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="hátra"
+                app:icon="@android:drawable/arrow_down_float"
+                app:iconPadding="0dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvGunAngle"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="bottom|center"
+        android:text='Löveg dőlés'
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/seekBarGun"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:max="60"
+        android:progress="90" />
+
+    <TextView
+        android:id="@+id/tvTurret"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="bottom|center"
+        android:text="Torony forgás"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/seekBarTurret"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:max="106"
+        android:min="82"
+        android:progress="94" />
+
+</LinearLayout>
